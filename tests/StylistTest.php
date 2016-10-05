@@ -29,7 +29,7 @@
             $test_name = "Sally";
             $test_date_began = "11-11-2011";
             $test_specialty = "Specialty";
-            $test_stylist = new Stylist($test_id, $test_name, $test_date_began, $test_stylist);
+            $test_stylist = new Stylist($test_id, $test_name, $test_date_began, $test_specialty);
             //Act
             $result = $test_stylist->getName();
 
@@ -38,6 +38,7 @@
         }
         function testGetId(){
 
+            $id = null;
             $test_name = "Sally";
             $test_date_began = "11-11-2011";
             $test_specialty = "Specialty";
@@ -50,7 +51,7 @@
             $this->assertEquals(true, is_numeric($result));
         }
         function testSave(){
-
+            $id = null;
             $test_name = "Sally";
             $test_date_began = "11-11-2011";
             $test_specialty = "Specialty";
